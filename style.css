@@ -9,7 +9,7 @@ html {
 
 html,
 body {
-    margin: 0;
+    margin: 1.5rem;
     padding: 0;
 }
 
@@ -23,6 +23,7 @@ body {
 
 body {
     line-height: 1.5;
+    background-color: rgb(240, 244, 245);
 }
 
 a,
