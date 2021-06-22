@@ -29,8 +29,13 @@ body {
 a,
 a.visited {
     color: inherit;
-    text-decoration: underline dotted;
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+  }
 
 .pdf-relative-link-path {
     font-size: 80%;
