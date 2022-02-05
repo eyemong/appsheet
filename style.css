@@ -234,7 +234,7 @@ ul.toggle>li {
 }
 
 ul {
-    padding-inline-start: 0.5em;
+    padding-inline-start: 0.1em;
 }
 
 ul>li {
@@ -394,7 +394,7 @@ code {
 }
 
 .code {
-    padding: 1em 1em;
+    padding: 0.5em 1em;
 }
 
 .code-wrap {
