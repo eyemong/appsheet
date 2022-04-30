@@ -71,7 +71,7 @@ h2 {
 h3 {
     font-size: 1rem;
     margin-top: 1rem;
-    color: darkblue;
+    color: rgb(9, 9, 97);
 }
 
 .source {
@@ -384,7 +384,7 @@ p {
 code {
     background: rgba(135, 131, 120, 0.15);
     border-radius: 3px;
-    padding: 0.2em 0.4em;
+    padding: 0.4em 0.4em;
     
     font-size: 85%;
     tab-size: 2;

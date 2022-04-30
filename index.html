@@ -18,6 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="EJZuSNxPsmU8A31x6MA13ARjI06BS8uE2TYS5DNQoWI" />
 	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -27,7 +29,7 @@
 <body>	
 	<article class="page sans">
 		<div>
-			<h1 class="page-title">구글 앱시트 AppSheet 로 코딩 없이 앱 만들기</h1>
+			<h1 class="page-title">앱시트 AppSheet 소개 및 사용법</h1>
 			<p>posted by <span class="user">코딩하는약사 <a href="mailto:eyemong123@gmail.com" class="bookmark-href">이메일
 					</a><a href="https://open.kakao.com/me/eyemong" class="bookmark-href">카카오톡</a></span> </p>
 			<p>last updated <time>2022-04-30</time></p>
@@ -36,19 +38,19 @@
 
 		<div>
 			<p>
-				<a class="code" href="https://www.appsheet.com/portfolio/3607245" target=_blank><b>▷ 샘플앱 포트폴리오 바로가기
+				<a class="code" href="https://www.appsheet.com/portfolio/3607245" target=_blank><b>▷ 샘플앱 포트폴리오
 						◁</b></a>
-				<a class="code" href="https://www.youtube.com/user/eyemong1203" target=_blank><b>▷ 앱시트 강의 유튜브 채널
+				<a class="code" href="https://www.youtube.com/user/eyemong1203" target=_blank><b>▷ 유튜브 채널
 						◁</b></a>
-				<a class="code" href="https://cafe.naver.com/appsheetkorea" target=_blank><b>▷ 국내 앱시트 사용자 커뮤니티(네이버 카페)
+				<a class="code" href="https://cafe.naver.com/appsheetkorea" target=_blank><b>▷ 국내 사용자 커뮤니티
 						◁</b></a>
 			</p><br>
 			<p><mark class="highlight-blue"><a href="http://www.appsheet.com" target="_blank">구글 앱시트 Google
 						AppSheet</a></mark>는
 				엑셀이나 구글 스프레드시트 등을 이용하여 코딩 없이 손쉽게 데이터 기반의 모바일앱/모바일웹을 만들 수 있는 도구입니다.
-				<a href="https://blog.naver.com/eye_mong85/222328577074" target=_blank><b> ▷ 노코드 앱제작 툴 앱시트 간략 소개</b></a>
+				<a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&222328577074" target=_blank><b> ▷ 노코드 앱제작 툴 앱시트 간략 소개</b></a>
 			</p>
-			<p>이 페이지는 제가 앱시트를 직접 사용해보고 사용법을 쉽게 알아볼 수 있도록 정리한 글모음입니다. 각 폴더의 제목을 누르면 상세 페이지 링크를 볼 수 있습니다.</p>
+			<p>이 페이지는 제가 앱시트를 직접 사용해보고 사용법을 쉽게 알아볼 수 있도록 정리한 글모음입니다. 아래 각 폴더의 제목을 누르면 상세 페이지 링크를 볼 수 있습니다.</p>
 
 			<br>
 			<ul class="toggle">
@@ -118,307 +120,322 @@
 				<li>
 					<details>
 						<summary>🟩 <strong>기능별 앱 제작방법</strong></summary>
+						<div class="highlight-teal_background margin">
+							<h3>테이블 구조</h3>
+							<div class="indented">
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222399123012" target=_blank>
+										[KEY] 행마다 고유한 번호(key) 부여하기 - UNIQUEID() 함수 활용</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222399123012" target=_blank>
+										[KEY] 키(key) 설정에 대한 여러가지 고찰 - 무엇을 key로 선택할까? 연속적으로 증가하는 key는 어떻게?</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222672599118" target=_blank>
+										[KEY] 테이블에서 Key가 될 수 있는 컬럼이 있는지 확인하고 없으면 만들어 쓰자</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222239239154" target=_blank>
+										[Ref] 다른 데이터베이스(테이블)을 연결하고 참조하기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222377471016" target=_blank>
+										[Ref] 상하위 테이블 관계 설정 Is a part of?</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222663226651" target=_blank>
+										[Ref] 자식테이블에 부모테이블 정보 자동 입력하기, 한 번에 여러 행 입력</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222678470218" target=_blank>
+										[Ref] Ref 타입을 적극 활용하되 하나의 관계는 한번만 설정하자</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222244490111" target=_blank>
+										[Slice] 특정 조건의 데이터만 보여주는 슬라이스(부분 테이블)</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222499412586" target=_blank>
+										[Slice] 특정 조건의 마지막행만 가져오는 슬라이스 만들기 - MAXROW 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222605164904" target=_blank>
+										[Slice] 최근 한 달 데이터만 볼 수 있는 슬라이스 만들고 차트 뷰로 연결하기 📺</a></li>
+								</ul>
+							</div>
+						</div>
+
 						<div class="highlight-blue_background margin">
 							<h3>컬럼의 유형</h3>
 							<div class="indented">
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222235352247" target=_blank>
-										Enum, Enumlist: 미리 설정된 값을 선택할 수 있게</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222235352247" target=_blank>
+										[Enum] 미리 설정된 목록 중 선택할 수 있게 하는 컬럼 타입 Enum, Enumlist</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222346075507" target=_blank>
-										Image: 이미지 삽입, 이미지 연동하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222578995471" target=_blank>
+										[Enum] 상위 Enum 선택에 따라 하위 Enum 항목이 바뀌는 계층적 선택지 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222462455560" target=_blank>
-										Changetimestamp, Changecounter: 컬럼 내용을 수정한 일시와 수정한 횟수를 캡쳐</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222466647614" target=_blank>
+										[Enum] Enumlist(다중 선택) 목록에서 다른 테이블의 값이 표시되게 하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222571787700" target=_blank>
-										Signature, Drawing: 서명 넣기와 그림 그리기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222346075507" target=_blank>
+										[Image] 이미지 삽입, 이미지 연동 방법 Image type</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222633568763" target=_blank>
-										Show: 폼 뷰에서 이미지나 텍스트를 보여주는 컬럼</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222634252291" target=_blank>
+										[Image] 구글 스프레드시트에서 앱시트 업로드 이미지를 바로 미리보기하는 방법</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222528180425" target=_blank>
-										Url: 컬럼 내용을 이용하여 링크 주소 연결하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222528180425" target=_blank>
+										[Url] Url 타입 이용하여 지도앱, 네비앱 (네이버지도, 카카오맵, 티맵) 연결하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222624251154" target=_blank>
-										Url: 지도앱, 네비앱(네이버지도, 카카오맵, 티맵) 연결하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222624251154" target=_blank>
+										[Url] 컬럼 값을 이용하여 검색사이트 연결하기 - ENCODEURL 함수</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222578995471" target=_blank>
-										상위 enum 선택에 따라 하위 enum 항목이 바뀌는 계층적 드롭다운박스</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222494461473" target=_blank>
+										[Scannable] 바코드나 QR코드를 이용하여 제품정보 입력하고 검색하는 앱 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222653253190" target=_blank>
-										가상컬럼 활용하여 데크 뷰에 여러 컬럼 보이기, 경과시간 계산하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222395546178" target=_blank>
+										주소 자동 완성(Address type), GPS 현재 위치 입력(LatLong type)</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222571787700" target=_blank>
+										서명 넣기(Signature type)와 그림 그려서 넣기(Drawing type)</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222462455560" target=_blank>
+										컬럼 내용을 수정한 일시와 수정한 횟수를 캡쳐하기 - changetimestamp, changecounter</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222420315096" target=_blank>
+										[가상컬럼] 연도별 월별 차트뷰 만들기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222675973700" target=_blank>
+										[가상컬럼] 날짜 컬럼에 요일도 같이 표시 하기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222653253190" target=_blank>
+										[가상컬럼] 데크 뷰에 여러 컬럼값 보이게 하기, 경과시간 계산하기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222487551388" target=_blank>
+										[Formula] 다른 컬럼에서 선택한 값에 따라 컬럼의 기본값을 다르게 셋팅하기 - IF, IFS 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222591370727" target=_blank>
+										[Formula] 드롭다운 항목을 선택하면 다른 테이블의 이미지를 참조하여 불러오기</a>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222503898985" target=_blank>
+										[Formula] 특정 조건이 일치하는 다른 행의 값을 참조하는 방법 - SELECT 함수, FILTER 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222706842548" target=_blank>
+										[Formula] 로그인 계정을 인식하여 이름으로 바꾸기 - LOOKUP 함수 응용</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222614668546" target=_blank>
+										구글 스프레드시트 함수 연동하기 - Spreadsheet formula 📺</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222338911458" target=_blank>
+										구글 스프레드시트 함수 연동하기 - Spreadsheet formula 📝</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222405957752" target=_blank>
+										구글 시트 SUMIF 함수로 입출고정보를 제품정보 테이블에 적용</a></li>
 								</ul>
 							</div>
 						</div>
 
-						<div class="highlight-blue_background margin">
-							<h3>컬럼의 속성</h3>
-							<div class="indented">
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222402231429" target=_blank>
-										Regenerate structure: 앱생성 후 컬럼이 추가/삭제/변경 되었을 때</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222487551388" target=_blank>
-										Initial	value: 다른 항목에서 선택한 값에 따라 특정 항목의 기본 셋팅값을 다르게 IF(), IFS()</a>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222591370727" target=_blank>
-										App	formula: 드롭다운 항목을 선택하면 다른 테이블의 이미지가 참조되도록</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222338911458" target=_blank>
-										Spreadsheet formula: 구글스프레드시트의	수식을 앱시트에서 연동</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222405957752" target=_blank>
-										Spreadsheet formula 응용: 다른 테이블의 입출고정보를 제품정보 테이블로 가져오기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222466647614" target=_blank>
-										Valid if: Enumlist 목록에서 다른 테이블의 값이 표시되게</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222494461473" target=_blank>
-										Scannerble: 바코드를 이용하여 제품정보 입력하고 검색하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222627560760" target=_blank>
-										Editable: 데이터를 추가/변경 상황에 따라 컬럼 편집 가능여부 다르게</a></li>
-								</ul>
-								
-							</div>
-						</div>
-
-						<div class="highlight-teal_background margin">
-							<h3>테이블 다루기</h3>
-							<div class="indented">
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222399123012" target=_blank>
-										키(key) 설정에 대한 여러가지 고찰</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222233400588" target=_blank>
-										UNIQUEID(): 데이터 열마다 고유한 번호(key) 부여하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222672599118" target=_blank>
-										테이블에서 Key가 될 수 있는 컬럼이 있는지 확인하고 없으면 만들어 쓰자</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222239239154" target=_blank>
-										Ref: 다른 데이터베이스의 값 참조하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222678470218" target=_blank>
-										Ref를 적극 활용하되 하나의 관계는 한번만 설정하자</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222377471016" target=_blank>
-										Is part of?: 상하위 테이블 관계 적용하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222663226651" target=_blank>
-										상하위 테이블 관계 응용 (부모 자식 테이블에 데이터 한꺼번에 입력)</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222244490111" target=_blank>
-										Slice: 특정	조건의 데이터만 필터하여 부분 테이블로</a></li>
-								</ul>
-								
-							</div>
-						</div>
+					
 
 						<div class="highlight-purple_background margin">
 							<h3>화면 구성</h3>
 							<div class="indented">
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222241147212" target=_blank>
-										Sort by, Group by: 데이터를 카테고리로 묶어서 보여주기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222241147212" target=_blank>
+										[Group] 데이터를 계층적 그룹으로 묶어서 보여주기 - Group by</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222520316591" target=_blank>
-										Group aggregate 활용하여 집계화면 만들기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222520316591" target=_blank>
+										[Group] Group aggregate 활용하여 집계화면 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222369391786" target=_blank>
-										Format rule: 조건에 따라 항목별 서식을 다르게 하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222524859718" target=_blank>
+										구글 스프레드시트의 QUERY 기능을 이용하여 집계화면 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222692959901" target=_blank>
-										Group by에 의한 그룹명에 서식 format rule 설정</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222369391786" target=_blank>
+										[Format rules] 조건에 따라 항목별 서식 적용하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222420315096" target=_blank>
-										Chart view: 가상컬럼 기능을 이용하여 월별 연도별 차트 만들기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222692959901" target=_blank>
+										[Format rules] Group by에 의한 그룹명에 포맷 룰 서식 설정</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222417253292" target=_blank>
-										Dashboard view: 한 페이지에 여러개의 화면을 탭으로 넣기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222417253292" target=_blank>
+										[Dashboard] 한 페이지에 여러개의 화면을 탭으로 넣기 - Mobile Tab view</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222596446874" target=_blank>
-										Interactive dashboard: 선택한 항목에 따라 달라지는 반응형 차트</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222596446874" target=_blank>
+										[Dashboard] 선택한 항목에 따라 달라지는 반응형 차트 만들기 - Interactive Dashboard</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222409031538" target=_blank>
-										Inline view: 다른 테이블의 참조내역을 보여주는 부분 편집하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222633568763" target=_blank>
+										[Form] 폼 뷰에서 안내문구나 이미지 등 보여주기 목적의 컬럼 만들기 - Show type</a></li>
 								</ul>								
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222514551292" target=_blank>
-										Quick edit 기능으로 데이터 조회와 수정을 동시에</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222698267156" target=_blank>
+										[Form] 여러 페이지 여러 섹션으로 된 폼 뷰 만들기 - Show type</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222548462544" target=_blank>
-										Enable QuickEdit 기능으로 여러 항목을 동시에 수정하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222627560760" target=_blank>
+										[Form] 데이터 추가/변경 상황에 따라 편집 가능 여부 다르게 설정하기 - Editable</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222646929447" target=_blank>
-										About 화면: 앱 사용법 안내 페이지 만들기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222695705712" target=_blank>
+										XY type을 이용하여 나만의 Map view 만들기 📺</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222684763331" target=_blank>
-										Dispaly name: 동적으로 바뀌는 view name 설정하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222684763331" target=_blank>
+										동적으로 바뀌는 뷰 네임(View name)은 Display name에서</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222308904452" target=_blank>
+										버튼이름, 컬럼이름을 화면에 따라 다르게 표시하기, CONTEXT() 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222409031538" target=_blank>
+										다른 테이블의 참조내역을 보여주는 인라인 뷰(inline view) 편집하기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222514551292" target=_blank>
+										Quick edit 기능으로 디테일 뷰에서 데이터 조회와 수정을 동시에</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222548462544" target=_blank>
+										Enable QuickEdit 기능으로 목록 뷰에서 여러 컬럼을 동시에 수정하기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222646929447" target=_blank>
+										앱 사용법 안내 페이지 만들기 - About 화면 활용</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222325151070" target=_blank>
+										갤러리 뷰를 이용해 각 화면으로 연결되는 메뉴 페이지 만들기 - LINKTOVIEW 함수</a></li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="highlight-pink_background margin">
-							<h3>액션 Action</h3>
+							<h3>동작 만들기 (액션, Action)</h3>
 							<div class="indented">
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222260364660" target=_blank>
-										버튼을 누르면 테이블에 특정한 값을 지정해주는 액션</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222611113119" target=_blank>
+										지금 보고 있는 데이터를 문자 메시지로 생성하는 액션 버튼 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222611113119" target=_blank>
-										보고 있는 데이터를 문자 메시지로 생성하는 액션</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222665792765" target=_blank>
+										액션(Action)으로 값을 바꾸는 버튼 만들기 📺</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222312139223" target=_blank>
-										다른 테이블에 데이터를 추가하는 액션 - 수불내역 관리 앱 예제</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222260364660" target=_blank>
+										특정 컬럼에 값을 셋팅하는 액션 버튼 만들기 📝</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222278087450" target=_blank>
-										보고 있는 데이터를 다른 화면의 데이터로 셋팅해주는 액션 LINKTOFORM())</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222278087450" target=_blank>
+										지금 보고있는 데이터를 폼 뷰에 셋팅해주는 액션 - LINKTOFORM 함수</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222315890063" target=_blank>
-										여러 컬럼의 값을 동시에 검색하는 액션 LINKTOFILTERDVIEW()</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222618448102" target=_blank>
+										액션(Action)을 화면에 표시하거나 숨기는 여러가지 방법</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222558288137" target=_blank>
-										바코드를 이용하여 여러 테이블을 동시에 검색한 후 결과를 보여주는 액션</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222402204963" target=_blank>
+										특정 테이블의 전체 행(레코드)을 삭제하는 액션 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222402204963" target=_blank>
-										특정 테이블 전체 내용(레코드)을 삭제하는 액션</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222658931575" target=_blank>
+										행 전체를 한꺼번에 선택하는 액션 버튼 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222491090146" target=_blank>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222680428525" target=_blank>
+										반복 동작을 하는 액션, 루프 액션, 액션으로 반복문 만들기</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222491090146" target=_blank>
 										Enumlist에서 선택된 항목을 개별 행으로 추가하는 다중 액션</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222680428525" target=_blank>
-										반복 동작을 하는 액션, 루프 액션</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222558288137" target=_blank>
+										여러 테이블을 동시에 검색한 후 결과를 보여주는 액션</a></li>
 								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222658931575" target=_blank>
-										행 전체 선택 액션</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222618448102" target=_blank>
-										액션을 화면에 표시하거나 숨기는 여러가지 방법</a></li>
-								</ul>
+								
 							</div>
 						</div>
 						<div class="highlight-red_background margin">
 							<h3>자동화 Automation Bot</h3>
 							<div class="indented">
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222352767249" target=_blank>
-										봇 원리와 구성, 봇 만드는 방법: Bot = Event + Process</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222356250770" target=_blank>
+										데이터를 삭제했을 때 다른 테이블에 삭제내역을 백업하는 봇 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222356250770" target=_blank>
-											삭제한 데이터를 다른 테이블에 백업하는 봇</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222620586121" target=_blank>
+										데이터 추가, 삭제, 변경 시 이메일 알림 보내기 봇 Bot 만들기 📺</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222322723150" target=_blank>
-										변경된 컬럼이 무엇인지 알려주는 알림메세지 봇</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222322723150" target=_blank>
+										변경된 컬럼이 무엇인지 알려주는 푸쉬 알림 봇 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222480138178" target=_blank>
-										일정한 주기마다 데이터를 파일로 자동 저장하는 봇</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222480138178" target=_blank>
+										일정한 주기마다 데이터를 엑셀 파일로 자동 저장하는 봇 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222691534129" target=_blank>
-										PDF 파일 자동 생성하기 - 개별 행(레코드) 단위</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222537447976" target=_blank>
+										PDF 파일을 자동으로 생성해주는 템플릿 만들기 - 테이블 전체 생성</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222537447976" target=_blank>
-										PDF 파일 자동 생성하기 - 전체 테이블 단위</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222691534129" target=_blank>
+										앱의 데이터로 PDF 파일 자동 생성하기 - 개별 행(레코드) 단위 생성</a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="highlight-pink_background margin">
-							<h3>다양한 함수 활용</h3>
-							<div class="indented">
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222499412586" target=_blank>
-										MAXROW(): 특정 기준의 마지막행만 가져오는 슬라이스 만들기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222503898985" target=_blank>
-										SELECT(), FILTER(): 특정 조건이 일치하는 다른 행의 값을 참조하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222325151070" target=_blank>
-										LINKTOVIEW(): Gallery view 응용하여 각 화면으로 연결되는 메뉴페이지 만들기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222308904452" target=_blank>
-										CONTEXT(): 버튼이름, 컬럼이름을 화면에 따라 다르게 표시하기</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222675973700" target=_blank>
-										WEEKDAY(): 날짜 컬럼에 요일도 같이 표시 하기</a></li>
-								</ul>
-							</div>
-						</div>
+						
 						<div class="highlight-red_background margin">
-							<h3>권한 설정</h3>
+							<h3>사용자별 권한 설정</h3>
 							<div class="indented">
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222329861166" target=_blank>
-										USEREMAIL(): 컬럼/테이블/앱 권한을 사용자별로 설정</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222445741875" target=_blank>
+										각 사용자가 본인이 등록한 내용만 보이게 하기 - Security filter</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222445741875" target=_blank>
-										Security filter: 각 사용자가 본인이 등록한 내용만 보이게 하기</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222329861166" target=_blank>
+										컬럼/테이블/앱의 수정 권한을 사용자별로 다르게 설정하기	</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222647918952" target=_blank>
-										User settings: 퍼블릭 앱에서 사용자 권한 설정하기</a>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222647918952" target=_blank>
+										User settings를 이용하여 사용자 권한 설정하기</a>
 										</li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222650816777" target=_blank>
-										User settings: 퍼블릭 앱에서 입장코드로 접근 제한하기</a>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222650816777" target=_blank>
+										User settings를 이용하여 입장코드로 접근 제한하기</a>
 										</li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/eye_mong85/222668493049" target=_blank>
-										User settings + Security filter: 퍼블릭 앱에서 사용자별 데이터 제한</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222668493049" target=_blank>
+										사용자 설정하고 설정에 따라 보이는 데이터 제한하기</a></li>
 								</ul>
 							</div>
 						</div>
@@ -434,57 +451,38 @@
 						<summary><strong>🟦 앱시트 사용 관련 팁</strong></summary>
 						<div class="indented">
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222358932495" target=_blank>
-										앱 배포하기 + 요금제 plan 선택팁</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222658212970" target=_blank>
+									앱시트 요금제 비교 정리, 디플로이 방법, 퍼블릭 앱 설정 방법, 샘플 앱 설정, Q&A 총정리 📺</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222217317112" target=_blank>
-										앱시트 간략 소개 (+스마트메이커와 비교)</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222358932495" target=_blank>
+									디플로이 방법 + 앱시트 요금제 가격 plan 선택 팁</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222575749016" target=_blank>
-										내가 만든 앱의 사용자 수와 접속건수 확인 방법</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222367491081" target=_blank>
+									다른 사용자를 지정하여게 앱 소스를 복사해주고 복사해오는 방법</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222270424652" target=_blank>
-										해결되지 않는 문제는 커뮤니티 포럼에서 알아보기</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222587813378" target=_blank>
+									샘플 앱 만들어 템플릿만 공개적으로 공유하는 방법</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222319517477" target=_blank>
-										동기화 설정으로 로딩속도 개선하기</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222394366725" target=_blank>
+									다른 사람의 공개된 샘플 앱 복사하는 방법</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222395546178" target=_blank>
-										주소나 위치를 쉽게 입력하는 방법</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222705032823" target=_blank>
+									앱시트 데스크탑 버전 웹 앱을 바탕화면에 바로가기 아이콘으로 추가하는 방법</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222367491081" target=_blank>
-										다른 사람이 만든 앱 소스를 공유 받고 복제하는 방법</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222554832398" target=_blank>
+									제작한 앱을 삭제하는 방법, 앱시트의 데이터 파일 위치는 어디에</a></li>
 							</ul>
 							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222587813378" target=_blank>
-										샘플 앱 만들어 공유하는 방법</a></li>
+								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222575749016" target=_blank>
+									내가 만든 앱의 사용자 수와 접속건수 확인 방법</a></li>
 							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222394366725" target=_blank>
-										다른 사람의 샘플 앱을 확인하고 복사하는 방법</a></li>
-							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222554832398" target=_blank>
-										제작한 앱을 삭제하는 방법</a></li>
-							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222524859718" target=_blank>
-										구글 스프레드시트의 QUERY 기능을 이용하여 집계화면 만들기</a></li>
-							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222634252291" target=_blank>
-										구글 스프레드시트에서 앱시트 이미지를 바로 미리보기하는 방법</a></li>
-							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/eye_mong85/222686666242" target=_blank>
-										구글 캘린더와 연동하기</a></li>
-							</ul>
+							
 						</div>
 					</details>
 				</li>
@@ -498,52 +496,52 @@
 						<div class="indented">
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222249928909" target=_blank>
-									💸엑셀 가계부 대신 나만의 자산관리 앱 만들기(I)
+									💸 엑셀 가계부 대신 나만의 자산관리 앱 만들기(I)
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222251834094" target=_blank>
-									💸엑셀 가계부 대신 나만의 자산관리 앱 만들기(II)
+									💸 엑셀 가계부 대신 나만의 자산관리 앱 만들기(II)
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222531227807" target=_blank>
-									🚞여행 나들이 정보 기록 관리 앱
+									🚞 여행 나들이 정보 기록 관리 앱
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222236050904" target=_blank>
-									🚗명절 무료 개방 주차장 정보 확인 앱
+									🚗 명절 무료 개방 주차장 정보 확인 앱
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222295964897" target=_blank>
-									📒거래처정보 관리 앱 - 연락처, 지도 연동
+									📒 거래처정보 관리 앱 - 연락처, 지도 연동
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222363899857" target=_blank>
-									🗃️제품관리 앱 = 위치조회 + 입출고등록 + 재고조회
+									🗃️ 제품관리 앱 = 위치조회 + 입출고등록 + 재고조회
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222386807725" target=_blank>
-									📊거래내역관리 앱 = 영수증관리 + 결제관리 + 미수확인 + 마감정산 + 거래처관리
+									📊 거래내역관리 앱 = 영수증관리 + 결제관리 + 미수확인 + 마감정산 + 거래처관리
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222349677576" target=_blank>
-									💊약장위치 검색 앱
+									💊 약장위치 검색 앱
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222285614037" target=_blank>
-									💊바코드 스캔으로 약품정보 확인하는 앱
+									💊 바코드 스캔으로 약품정보 확인하는 앱
 								</a></li>
 							</ul>
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222694881548" target=_blank>
-									📝병원약사의 Appsheet 활용 사례 - 직접 만들어 쓰는 증례 보고서 양식 eCRF
+									📝 병원약사의 Appsheet 활용 사례 - 직접 만들어 쓰는 증례 보고서 양식 eCRF
 								</a></li>
 							</ul>
 						</div>
