@@ -10,7 +10,8 @@ html {
 html,
 body {
     margin: 1.5rem;
-    padding: 0;
+    padding: 0;   
+    
 }
 
 @media only screen {
@@ -24,6 +25,7 @@ body {
 body {
     line-height: 1.5;
     background-color: white;
+    font-family: 'NanumSquareAcr';
 }
 
 a,
@@ -53,6 +55,7 @@ h3 {
 }
 
 .page-title {
+    font-family: 'NanumSquareAceb';
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 0;
