@@ -39,7 +39,7 @@
 				구글 앱시트 AppSheet 소개 및 사용법</h1>
 			<p>posted by <span class="user">&nbsp;코딩하는 약사 <a href="mailto:eyemong123@gmail.com" class="bookmark-href">&nbsp;이메일
 					</a></span> </p>
-			<p>last updated <time>&nbsp;2022-09-29</time></p>
+			<p>last updated <time>&nbsp;2022-09-30</time></p>
 			<hr>
 		</div>
 
@@ -127,7 +127,7 @@
 							<div class="indented">
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222233400588&categoryNo=14" target=_blank>
-										행마다 고유한 번호(Key) 부여하기 - UNIQUEID() 함수</a></li>
+										행마다 고유한 번호(Key) 부여하기 - UNIQUEID 함수</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222399123012&categoryNo=14" target=_blank>
@@ -140,6 +140,10 @@
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222239239154&categoryNo=14" target=_blank>
 										다른 데이터베이스(테이블)을 연결하고 참조하는 Ref 컬럼 타입</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222591370727&categoryNo=14" target=_blank>
+										Ref 타입을 이용해 다른 테이블에 연결된 이미지를 참조하여 불러오기</a>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222678470218&categoryNo=14" target=_blank>
@@ -159,23 +163,19 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222730142873&categoryNo=14" target=_blank>
-										Ref 설정도 하면서 드롭다운 목록은 안 보이게</a></li>
+										Ref 설정을 하면서 드롭다운 목록은 안 보이게 하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222806964033&categoryNo=14" target=_blank>
-										Ref 드롭다운 생성 시 원하는 조건에 맞는 목록만 보이게</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222591370727&categoryNo=14" target=_blank>
-										드롭다운 항목을 선택하면 다른 테이블의 이미지를 참조하여 불러오기</a>
+										Ref 드롭다운 생성 시 원하는 조건에 맞는 목록만 보이게 하기 - Valid if</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222244490111&categoryNo=14" target=_blank>
-										특정 조건의 데이터만 보여주는 슬라이스(부분 테이블) - Slice</a></li>
+										특정 조건의 데이터만 필터링해서 보여주는 슬라이스(Slice) 기능</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222499412586&categoryNo=14" target=_blank>
-										특정 조건의 마지막행만 가져오는 슬라이스 만들기 - MAXROW 함수</a></li>
+										특정 조건의 마지막 행만 가져오는 슬라이스 만들기 - MAXROW 함수</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222605164904&categoryNo=14" target=_blank>
@@ -183,7 +183,7 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222686666242&categoryNo=14" target=_blank>
-										구글 캘린더 google calendar 연동하기</a></li>
+										구글 캘린더(Google Calendar) 연동하기</a></li>
 								</ul>
 							</div>
 						</div>
@@ -193,7 +193,7 @@
 							<div class="indented">
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222235352247&categoryNo=14" target=_blank>
-										미리 설정된 목록 중 선택할 수 있게 하는 컬럼 타입 Enum, Enumlist</a></li>
+										미리 설정된 목록 중 선택할 수 있게 하는 컬럼 타입 Enum, EnumList</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222578995471&categoryNo=14" target=_blank>
@@ -201,43 +201,63 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222466647614&categoryNo=14" target=_blank>
-										Enumlist(다중 선택) 목록에서 다른 테이블의 값이 표시되게 하기</a></li>
+										EnumList (다중 선택) 목록에서 다른 테이블의 값이 표시되게 하기 - Valid if</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222888357387&categoryNo=14" target=_blank>
+										폼 뷰에서 입력할 값 추천 받기 - Suggested values</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222346075507&categoryNo=14" target=_blank>
 										이미지 삽입, 이미지 연동 방법 - Image 타입</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222528180425&categoryNo=14" target=_blank>
-										Url 타입 이용하여 지도앱, 네비앱 (네이버지도, 카카오맵, 티맵) 연결</a></li>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222634252291&categoryNo=14" target=_blank>
+										구글 스프레드시트에서 앱시트 업로드 이미지를 바로 미리보기하는 방법</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222624251154&categoryNo=14" target=_blank>
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222830665469&categoryNo=20" target=_blank>
+										구글 드라이브에서 공유한 이미지나 파일을 앱시트에서 링크하는 방법</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222528180425&categoryNo=14" target=_blank>
 										Url 타입 이용하여 검색사이트 연결하기 - ENCODEURL 함수</a></li>
 								</ul>
 								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222624251154&categoryNo=14" target=_blank>
+										Url 타입 이용하여 지도앱, 네비앱 (네이버지도, 카카오맵, 티맵) 연결</a></li>
+								</ul>								
+								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222395546178&categoryNo=14" target=_blank>
-										주소 자동 완성(Address type), GPS 현재 위치 입력(LatLong type)</a></li>
+										주소 자동 완성(Address 타입), GPS 현재 위치 입력(LatLong 타입)</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222571787700&categoryNo=14" target=_blank>
-										서명 넣기(Signature type)와 그림 그려서 넣기(Drawing type)</a></li>
+										서명 넣기(Signature 타입)와 그림 그려서 넣기(Drawing 타입)</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222462455560&categoryNo=14" target=_blank>
-										컬럼 내용을 수정한 일시와 수정한 횟수를 캡쳐하기 - changetimestamp, changecounter</a></li>
+										컬럼 내용을 수정한 일시와 수정한 횟수를 캡쳐하는 ChangeTimestamp, ChangeCounter 타입</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222818666233&categoryNo=14" target=_blank>
-										LongText 타입에서 마크다운 문법, HTML 태그로 서식 적용하기</a></li>
+										LongText 타입에서 마크다운(Markdown) 문법이나 HTML 태그로 서식 적용하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222494461473&categoryNo=14" target=_blank>
-										바코드나 QR코드를 이용하여 제품정보 입력하고 검색하는 앱 만들기 - Scannable</a></li>
+										바코드나 QR코드를 이용하여 제품정보 입력하고 검색하는 Scannable 기능</a></li>
 								</ul>								
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222793980887&categoryNo=14" target=_blank>
 										SEARCH? 속성을 활용한 검색 필터 기능</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222627560760&categoryNo=14" target=_blank>
+										데이터 추가/변경 상황에 따라 편집 가능 여부 다르게 설정하기 - Editable?, IN 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222719192275&categoryNo=14" target=_blank>
+										Enum 값에 따라 컬럼이 보였다 숨겼다 하기, 값이 없어도 디테일 뷰에 표시되게 하기 - SHOW?</a></li>
 								</ul>
 							</div>
 						</div>
@@ -255,20 +275,20 @@
 										Group aggregate 활용하여 집계화면 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222803056839&categoryNo=14" target=_blank>
-										새로고침 할 때마다 랜덤 정렬하기 - Sort by, RANDBETWEEN 함수</a></li>
-								</ul>
-								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222524859718&categoryNo=14" target=_blank>
 										구글 스프레드시트의 QUERY 기능을 이용하여 집계화면 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
+									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222803056839&categoryNo=14" target=_blank>
+										새로고침 할 때마다 랜덤 정렬하기 - Sort by, RANDBETWEEN 함수</a></li>
+								</ul>
+								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222369391786&categoryNo=14" target=_blank>
-										조건에 따라 항목별 서식 적용하기 - Format rules</a></li>
+										조건에 따라 다른 서식 적용하기 - Format Rules</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222692959901&categoryNo=14" target=_blank>
-										Group by에 의한 그룹명에 포맷 룰(Format rules) 서식 설정</a></li>
+										Group by에 의한 그룹명에 포맷 룰(Format Rule) 서식 적용하기</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222417253292&categoryNo=14" target=_blank>
@@ -276,23 +296,15 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222596446874&categoryNo=14" target=_blank>
-										선택한 항목에 따라 달라지는 반응형 차트 - Dashboard Interactive Dashboard</a></li>
+										선택한 항목에 따라 달라지는 반응형 차트 - Interactive Dashboard</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222633568763&categoryNo=14" target=_blank>
-										폼 뷰에서 안내문구나 이미지 등 보여주기 목적의 컬럼 만들기 - Show type</a></li>
+										폼 뷰에서 안내 문구나 이미지 등 보여주기 목적의 컬럼 만들기 - Show 타입</a></li>
 								</ul>								
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222698267156&categoryNo=14" target=_blank>
-										여러 페이지 여러 섹션으로 된 폼 뷰 만들기 - Show type</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222627560760&categoryNo=14" target=_blank>
-										데이터 추가/변경 상황에 따라 편집 가능 여부 다르게 설정하기 - Editable?</a></li>
-								</ul>
-								<ul class="bulleted-list">
-									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222719192275&categoryNo=14" target=_blank>
-										Enum 값에 따라 보였다 숨겼다하기, 값이 없어도 디테일 뷰에 표시되게하기 - Show?</a></li>
+										Show 타입으로 여러 페이지나 여러 섹션으로 된 폼 뷰 만들기</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222714009720&categoryNo=14" target=_blank>
@@ -300,8 +312,9 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222695705712&categoryNo=14" target=_blank>
-										XY type을 이용하여 지도 아닌 배경의 맵 뷰(Map view) 만들기 📺</a></li>
+										XY type을 이용하여 지도 대신 커스텀 배경의 맵 뷰(Map view) 만들기 📺</a></li>
 								</ul>
+								
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222684763331&categoryNo=14" target=_blank>
 										동적으로 바뀌는 뷰 네임(View name) - Display name</a></li>
@@ -332,11 +345,11 @@
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://post.naver.com/viewer/postView.naver?volumeNo=34223346&memberNo=4567577" target=_blank>
-										뷰에서 보이는 컬럼 순서 바꾸기</a></li>
+										뷰에서 보이는 컬럼 순서 바꾸기 - Column order</a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://post.naver.com/viewer/postView.naver?volumeNo=34226889&memberNo=4567577" target=_blank>
-										메뉴바의 메뉴 순서 바꾸기</a></li>
+										메뉴바의 메뉴 순서 바꾸기 - Position </a></li>
 								</ul>
 								<ul class="bulleted-list">
 									<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222859297207&categoryNo=14" target=_blank>
@@ -642,14 +655,7 @@
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222767298032" target=_blank>
 									여러 시트를 하나로 합치고 원하는 데이터만 뽑아내기 - IMPORTRANGE + QUERY</a></li>
 							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222634252291" target=_blank>
-									구글 스프레드시트에서 앱시트 업로드 이미지를 바로 미리보기하는 방법</a></li>
-							</ul>
-							<ul class="bulleted-list">
-								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222830665469" target=_blank>
-									구글 드라이브에서 공유한 이미지나 파일을 앱시트에서 링크하는 방법</a></li>
-							</ul>
+							
 							<ul class="bulleted-list">
 								<li><a href="https://blog.naver.com/PostView.naver?blogId=eye_mong85&logNo=222792070674&categoryNo=14" target=_blank>
 									이미지(사진)의 문자를 인식하는 OCR 기능</a></li>
